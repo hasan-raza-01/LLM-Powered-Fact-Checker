@@ -1,0 +1,35 @@
+# Configuration settings for LLM-Powered Fact Checker
+
+# Directory Configuration
+ROOT_DIR: "artifacts"
+
+# Data Ingestion
+DATA:
+  CSV_FILE: "verified_facts.csv"
+  CHROMA_DB_DIR: "chroma_db"
+  COLLECTION_NAME: "verified_facts"
+
+# Embedding Model
+EMBEDDING:
+  MODEL_NAME: "Qwen/Qwen3-Embedding-0.6B"
+  DEVICE: "cpu"  # or "cuda" if GPU available
+
+# Ollama Configuration  
+OLLAMA:
+  BASE_URL: "http://localhost:11434"
+  EXTRACTION_MODEL: "gemma:7b"
+  VERIFICATION_MODEL: "deepseek-r1:7b"
+
+# Claim Detection
+CLAIM_DETECTION:
+  MODEL_NAME: "Nithiwat/bert-base_claimbuster"
+  THRESHOLD: 0.5
+
+# Retrieval
+RETRIEVAL:
+  TOP_K: 3
+
+# Server
+SERVER:
+  HOST: "0.0.0.0"
+  PORT: 8000
