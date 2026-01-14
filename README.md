@@ -79,7 +79,7 @@ Watch the complete workflow in action:
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone https://github.com/hasan-raza-01/LLM-Powered-Fact-Checker
 cd LLM-Powered-Fact-Checker
 
 # Install dependencies
@@ -90,6 +90,8 @@ uv sync
 
 1. **Start the Backend** (includes data ingestion on startup):
    ```bash
+   source .venv/Scripts/activate (windows Git Bash)
+   source .venv/bin/activate (linux)
    uv run main.py
    ```
    
@@ -97,6 +99,8 @@ uv sync
 
 2. **Start the Frontend** (in a new terminal):
    ```bash
+   source .venv/Scripts/activate (windows Git Bash)
+   source .venv/bin/activate (linux)
    uv run streamlit run app.py
    ```
 
