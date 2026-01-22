@@ -40,8 +40,6 @@ Structured JSON Output
 
 ![Project Workflow](./screenshots/workflow.png)
 
-*Complete end-to-end pipeline from data ingestion to deployment*
-
 ---
 
 ## 🎥 **Walkthrough Video**
